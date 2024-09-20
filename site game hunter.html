@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME HUNTR - Multimédia & Communication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header avec logo et navigation -->
+    <header>
+        <div class="logo">
+            <h1>GAME HUNTR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reparation">Réparation</a></li>
+                <li><a href="#communication">Communication</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale avec bannière -->
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <h2>Votre expert multimédia et communication</h2>
+            <p>Vente, reprise, réparation multimédia & services de communication professionnels</p>
+            <a href="#services" class="btn">Découvrir nos services</a>
+        </div>
+    </section>
+
+    <!-- Présentation des services -->
+    <section class="services" id="services">
+        <h2>Nos Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Vente & Reprise Multimédia</h3>
+                <p>Vendez ou achetez des produits multimédia de qualité.</p>
+            </div>
+            <div class="card">
+                <h3>Réparation Multimédia</h3>
+                <p>Réparation de smartphones, ordinateurs, consoles, et plus encore.</p>
+            </div>
+            <div class="card">
+                <h3>Agence de Communication</h3> 
+                <p>Création de sites web, branding, réseaux sociaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour plus d'informations, n'hésitez pas à nous joindre !</p>
+        <a href="mailto:info@gamehuntr.com" class="btn">Contactez-nous</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GAME HUNTR. Tous droits réservés.</p>
+        <ul class="footer-nav">
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #D0CDC5; /* Gris clair */
+    color: #302B2D; /* Noir/gris foncé */
+}
+
+/* Header */
+header {
+    background-color: #302B2D; /* Noir/gris foncé */
+    color: #FFFFFF; /* Blanc */
+    padding: 10px 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Bannière */
+.banner {
+    background-image: url('banner.jpg'); /* Ajouter une image de fond */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; /* Blanc */
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    padding: 10px 20px;
+    background-color: #E6AC1B; /* Jaune */
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background-color: #d69419; /* Variante plus foncée du jaune */
+}
+
+/* Services */
+.services {
+    padding: 40px 20px;
+    background-color: #FFFFFF; /* Blanc */
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #302B2D; /* Noir/gris foncé */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-cards .card {
+    background-color: #D0CDC5; /* Gris clair */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.service-cards .card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #302B2D; /* Noir/gris foncé */
+}
+
+/* Contact */
+.contact {
+    padding: 40px 20px;
+    background-color: #302B2D; /* Noir/gris foncé */
+    color: #FFFFFF; /* Blanc */
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    background-color: #E6AC1B; /* Jaune */
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #302B2D; /* Noir/gris foncé */
+    color: #FFFFFF; /* Blanc */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-nav li {
+    margin: 0 15px;
+}
+
+footer .footer-nav li a {
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+}
